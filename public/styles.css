@@ -1,0 +1,158 @@
+body {
+  background: #651fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.wrapper {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #651fff;
+}
+
+.main {
+  background-color: #eee;
+  width: 450px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 6px 0px 0px 0px;
+}
+
+.scroll {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 325px;
+}
+
+.scroll-wrapper {
+  border-bottom-right-radius: 8px; /* Or any other desired radius */
+  overflow: hidden;
+}
+
+.img1 {
+  border-radius: 50%;
+  background-color: #66bb6a;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.msg {
+  background-color: #fff;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #3e3c3c;
+}
+
+.between {
+  font-size: 8px;
+  font-weight: 500;
+  color: #a09e9e;
+}
+
+.navbar {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-control {
+  font-size: 12px;
+  font-weight: 400;
+  width: 400px;
+  height: 30px;
+  border: none;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+form-control:focus {
+  box-shadow: none;
+  overflow: hidden;
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.icon1 {
+  color: #7c4dff !important;
+  font-size: 18px !important;
+  cursor: pointer;
+}
+
+.icon2 {
+  color: #512da8 !important;
+  font-size: 18px !important;
+  position: relative;
+  left: 8px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.icondiv {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  position: relative;
+  bottom: 1px;
+}
+
+.option {
+    margin: 5px; 
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #651fff; 
+  }
+
+  @media (max-width: 360px) {
+    .wrapper {
+      height: 90vh; 
+    }
+    .main {
+      width: 95%; 
+    }
+    .scroll {
+      height: 150px; 
+    }
+    .form-control {
+      font-size: 12px; 
+      width: 90%; 
+      margin-top: 10px; 
+    }
+    .icon1,
+    .icon2 {
+      font-size: 14px !important; 
+    }
+    .option {
+      font-size: 10px; 
+      padding: 3px; 
+    }
+  }
+
