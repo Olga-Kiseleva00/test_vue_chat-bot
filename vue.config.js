@@ -1,3 +1,4 @@
 module.exports = {
-  publicPath: "/test_vue_chat-bot/",
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/test_vue_chat-bot/" : "/",
 };
